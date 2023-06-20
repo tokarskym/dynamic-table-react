@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Work+Sans:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  background-color: #a8a4ff;
+}
+
+h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-size: 34px;
+  line-height: 40px;
+  color: #000112;
+}
+
+span {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+  color: #635fc7;
+}
+
+td {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+  color: #000112;
+}
+
+p,
+.logo-section .logo-sign {
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logo-section {
+  padding: 1em 0 0.5em 1em;
+  display: flex;
+  width: 100%;
+}
+
+.logo-div-one,
+.logo-div-two,
+.logo-div-three {
+  width: 9px;
+  height: 39px;
+  display: inline-block;
+  margin-right: 3px;
+  border-radius: 2px;
+}
+
+.logo-div-one {
+  background-color: #635fc7;
+}
+
+.logo-div-two {
+  background-color: #8a87d5;
+}
+
+.logo-div-three {
+  background-color: #b1afe3;
+}
+
+div.breadcrumbs {
+  padding: 0 1em 1em 1em;
+  width: 100%;
+}
+
+div.books-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p.book-title,
+p.books-number,
+p.category,
+p.book-author {
+  margin: 2px;
+}
+
+p.book-title {
+  padding: 2px;
+}
+
+div.book-description {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.book-description p {
+  text-align: justify;
+  word-spacing: 1px;
+  font-size: 12px;
+}
+
+.table {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table table thead {
+  display: none;
+}
+
+.table table tr {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+}
+
+.table table td {
+  border: none;
+  padding: 1em;
+}
+
+.table table td::before {
+  display: inline;
+  font-weight: bold;
+  content: "";
+  background-color: #8a87d5;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f4f7fd;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.table table td:nth-child(1)::before {
+  content: "Category ";
+}
+
+.table table td:nth-child(2)::before {
+  content: "Number of Books";
+}
+
+.table table td:nth-child(3)::before {
+  content: "Books List";
+}
+
+.table table td:nth-child(4)::before {
+  content: "Book Description";
+}
+
+.table table td:nth-child(5)::before {
+  content: "Author Books";
+}
+
+.table table td:hover {
+  border: 2px solid #635fc7;
+}
+
+@media (min-width: 1024px) {
+  .table table {
+    width: 100%;
+  }
+
+  .table table thead {
+    display: table-header-group;
+    background-color: #635fc7;
+    height: 76px;
+    padding: 1em;
+  }
+
+  .table table tr {
+    display: table-row;
+  }
+
+  .table table td {
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  .table table td::before {
+    display: none;
+  }
+
+  .table table tr td:nth-child(1) {
+    width: 5%;
+  }
+
+  .table table tr td:nth-child(2) {
+    width: 10%;
+  }
+
+  .table table tr td:nth-child(3) {
+    width: 20%;
+  }
+
+  .table table tr td:nth-child(4) {
+    width: 50%;
+  }
+
+  .table table tr td:nth-child(5) {
+    width: 20%;
+  }
+
+  .table table p.header-name {
+    display: inline;
+    font-weight: bold;
+    background-color: #8a87d5;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f4f7fd;
+    border-radius: 20px;
+    padding: 5px 12px 5px 12px;
+  }
+
+  p.book-title:hover,
+  p.books-number:hover,
+  p.category:hover,
+  p.book-author:hover {
+    color: #635fc7;
+    font-weight: 800;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
