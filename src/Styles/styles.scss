@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Work+Sans:wght@700&display=swap');
 
-// GENERAL STYLES
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  background-color: #a8a4ff;
+}
+
 h2 {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 700;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: -0.02em;
@@ -18,46 +23,18 @@ h2 {
 }
 
 span {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 2.4px;
   color: #635fc7;
 }
 
-h3 {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  color: #f4f7fd;
-}
-
-h4 {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 2.4px;
-  color: #000112;
-}
-
 td {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 2.4px;
   color: #000112;
-}
-
-body {
-  background-color: #a8a4ff;
 }
 
 p {
@@ -146,14 +123,14 @@ div.book-description {
 
 .table {
   width: 92%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: auto;
   background-color: #ffffff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-
+  border-radius: 20px;
+  padding-bottom: 80px;
   table {
     width: 100%;
     border-collapse: collapse;
@@ -238,19 +215,19 @@ div.book-description {
 
       tr {
         td:nth-child(1) {
-          width: 5%; // kolumna 1 zajmuje 20% szerokości
+          width: 5%;
         }
         td:nth-child(2) {
-          width: 10%; // kolumna 2 zajmuje 30% szerokości
+          width: 10%;
         }
         td:nth-child(3) {
-          width: 20%; // kolumna 3 zajmuje 50% szerokości
+          width: 20%;
         }
         td:nth-child(4) {
-          width: 50%; // kolumna 3 zajmuje 50% szerokości
+          width: 50%;
         }
         td:nth-child(5) {
-          width: 20%; // kolumna 3 zajmuje 50% szerokości
+          width: 20%;
         }
       }
       p.header-name {
@@ -258,9 +235,6 @@ div.book-description {
         font-weight: bold;
         background-color: #8a87d5;
         width: 100%;
-        font-family: 'Plus Jakarta Sans';
-        font-style: normal;
-        font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         color: #f4f7fd;

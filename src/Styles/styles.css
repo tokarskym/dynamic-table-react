@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Work+Sans:wght@700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +17,7 @@ h2 {
   font-style: normal;
   font-size: 34px;
   line-height: 40px;
+  letter-spacing: -0.02em;
   color: #000112;
 }
 
@@ -36,8 +36,7 @@ td {
   color: #000112;
 }
 
-p,
-.logo-section .logo-sign {
+p {
   display: inline-block;
 }
 
@@ -52,6 +51,9 @@ p,
   padding: 1em 0 0.5em 1em;
   display: flex;
   width: 100%;
+}
+.logo-section .logo-sign {
+  display: inline-block;
 }
 
 .logo-div-one,
@@ -96,6 +98,14 @@ p.category,
 p.book-author {
   margin: 2px;
 }
+p.book-title:hover,
+p.books-number:hover,
+p.category:hover,
+p.book-author:hover {
+  color: #635fc7;
+  font-weight: 800;
+  cursor: pointer;
+}
 
 p.book-title {
   padding: 2px;
@@ -107,7 +117,6 @@ div.book-description {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 div.book-description p {
   text-align: justify;
   word-spacing: 1px;
@@ -116,41 +125,39 @@ div.book-description p {
 
 .table {
   width: 92%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: auto;
   background-color: #ffffff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
+  padding-bottom: 80px;
 }
-
 .table table {
   width: 100%;
   border-collapse: collapse;
 }
-
 .table table thead {
   display: none;
 }
-
 .table table tr {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #ccc;
 }
-
 .table table td {
   border: none;
   padding: 1em;
 }
-
 .table table td::before {
   display: inline;
   font-weight: bold;
   content: "";
   background-color: #8a87d5;
   width: 100%;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -160,76 +167,59 @@ div.book-description p {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-
 .table table td:nth-child(1)::before {
   content: "Category ";
 }
-
 .table table td:nth-child(2)::before {
   content: "Number of Books";
 }
-
 .table table td:nth-child(3)::before {
   content: "Books List";
 }
-
 .table table td:nth-child(4)::before {
   content: "Book Description";
 }
-
 .table table td:nth-child(5)::before {
   content: "Author Books";
 }
-
 .table table td:hover {
   border: 2px solid #635fc7;
 }
-
 @media (min-width: 1024px) {
   .table table {
     width: 100%;
   }
-
   .table table thead {
     display: table-header-group;
     background-color: #635fc7;
     height: 76px;
     padding: 1em;
   }
-
   .table table tr {
     display: table-row;
   }
-
   .table table td {
     padding: 0.5em;
     text-align: center;
   }
-
   .table table td::before {
     display: none;
   }
-
   .table table tr td:nth-child(1) {
     width: 5%;
   }
-
   .table table tr td:nth-child(2) {
     width: 10%;
   }
-
   .table table tr td:nth-child(3) {
     width: 20%;
   }
-
   .table table tr td:nth-child(4) {
     width: 50%;
   }
-
   .table table tr td:nth-child(5) {
     width: 20%;
   }
-
   .table table p.header-name {
     display: inline;
     font-weight: bold;
@@ -241,15 +231,4 @@ div.book-description p {
     border-radius: 20px;
     padding: 5px 12px 5px 12px;
   }
-
-  p.book-title:hover,
-  p.books-number:hover,
-  p.category:hover,
-  p.book-author:hover {
-    color: #635fc7;
-    font-weight: 800;
-    cursor: pointer;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
